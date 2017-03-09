@@ -21,4 +21,4 @@ Table des matières
    introduction.rst
    json/index.rst
    licence.rst
-   IO/index.rst
+   enum/index.rst
