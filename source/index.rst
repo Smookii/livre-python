@@ -1,16 +1,8 @@
-======================
+﻿======================
  Bibliothèques Python
 ======================
 
-------------------------------------------
- Le petit guide des batteries à découvrir
-------------------------------------------
-
-:Auteurs: Yoan Blanc <yoan.blanc@he-arc.ch>,
-          A B <a.b@he-arc.ch>
-:Date: 2017-02-17
-:Licence: `Creative Commons Attribution-ShareAlike 4.0 International
-          <https://creativecommons.org/licenses/by-sa/4.0/legalcode>`_
+.. include:: introduction.rst
 
 Table des matières
 ==================
@@ -18,7 +10,70 @@ Table des matières
 .. toctree::
    :maxdepth: 1
 
-   introduction.rst
-   json/index.rst
    licence.rst
+   builtins/index.rst
+   dunders/index.rst
+   super/index.rst
+   fstrings/index.rst
+   email/index.rst
+   abc/index.rst
+   collections/index.rst
+   csv/index.rst
+   hashlib/index.rst
+   io/index.rst
+   itertools/index.rst
+   json/index.rst
    enum/index.rst
+   math/index.rst
+   multiprocessing/index.rst
+   re/index.rst
+   secrets/index.rst
+   statistics/index.rst
+   random/index.rst
+   time/index.rst
+   unittest/index.rst
+   weakref/index.rst
+
+   colorama/index.rst
+   hug/index.rst
+   pillow/index.rst
+   pycrypto/index.rst
+   pygame/index.rst
+   pytest/index.rst
+   sphinx/index.rst
+   watchdog/index.rst
+   datetime/index.rst
+
+
+À propos de ce livre
+====================
+
+:Auteurs:
+ - Adrien Mendes <adrien.mendes@he-arc.ch>
+ - André Neto Da Silva <andre.netodas@he-arc.ch>
+ - Anthony Fleury <anth.fleury@gmail.com>
+ - Anthony Gillioz <anthony.gillioz@he-arc.ch>
+ - Axel Bento da Silva <axel.bentodasilva@he-arc.ch>
+ - Axel Rieben <axel.rieben@he-arc.ch>
+ - Charles Ombang Ndo <charles.ombangndo@he-arc.ch>
+ - Christophe Hirschi <christophe.hirshi@he-arc.ch>
+ - Cédric Pahud <cedric.pahud@he-arc.ch>
+ - Dany Chea <dany.chea@he-arc.ch>
+ - Dylan Santos de Pinho <dylan.santosdeppinho@he-arc.ch>
+ - Guillaume Noguera <guillaume.noguera@he-arc.ch>
+ - Johnny Da Costa <johnny.dacosta@he-arc.ch>
+ - Julien Feuillade <julien.feuillade@he-arc.ch>
+ - Jérémy Dubois <jeremy.dubois@he-arc.ch>
+ - Karim Gehrig <karim.gehrig@he-arc.ch>
+ - Killian Castella <killian.castella@he-arc.ch>
+ - Maël Pedretti <mael.pedretti@hotmail.fr>
+ - Mohamed Jmaa <mohamed.jmaa@he-arc.ch>
+ - Paul Jeanbourquin <pa.jeanbourquin@gmail.com>
+ - Pedro Costa <pedro.costa@he-arc.ch>
+ - Quentin Vaucher <quentin.vaucher@protonmail.com>
+ - Sylvain Renaud <sylvain.renaud@he-arc.ch>
+ - Thibaut Piquerez <thibaut.piquerez@he-arc.ch>
+ - Yoan Blanc <yoan.blanc@he-arc.ch>
+:Date:  2017-03-16
+:Licence:
+        :ref:`licence`
