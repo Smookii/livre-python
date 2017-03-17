@@ -1,0 +1,6 @@
+Sphinx
+
+# JSON
+jsonschema
+msgpack-python
+ijson
