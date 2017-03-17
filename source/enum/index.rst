@@ -29,7 +29,7 @@ Il faut faire attention à ce pourquoi on l'utilise, une enumération n'est néc
 
 Un mauvais exmple d'utilisation est par exemple celui de créer un enum pour les animaux :
 
-.. code-block:: mauvaisExemple_01
+.. code-block:: python3
 
 	>>> class Annimal(Enum):
 			Dog = 0
@@ -48,7 +48,7 @@ Un bon exemple d'utilisation est celui du feu vert, on peu représenté l'état 
 en tête quel chiffre correpond à quoi, etc...
 Il suffit donc de remplacé cette variable entirère par une enumération de ce type :
 
-.. code-block:: bonExemple_01
+.. code-block:: python3
 
 	>>> class StateLight(Enum):
 			RED = 0
@@ -58,7 +58,7 @@ Il suffit donc de remplacé cette variable entirère par une enumération de ce 
 Dans cette exemple ci-dessus, bien que les états soit plus parlant, le fait d'utiliser des valeurs numériques peu poser des problèmes dans la suite du programme, par exemple si 
 le feu est actuellement à l'état ORANGE, et que nous voulons afficher la valeur de ce feu c'est la valeur 1 qui apparaîtra :
 
-.. code-block:: bonExemple_02
+.. code-block:: python3
 
 	>>>light = StateLight['ORANGE']
 	>>>light.name
@@ -68,7 +68,7 @@ le feu est actuellement à l'état ORANGE, et que nous voulons afficher la valeu
 
 Pour contrer ce problèmes il suffit de remplacé les valeurs numériques par des string plus parlant :
 
-.. code-block:: bonExemple_03
+.. code-block:: python3
 	
 	>>> class StateLight(Enum)
 			RED = "Rouge"
@@ -95,7 +95,7 @@ EnumColor_
 
 Enum, est la classe de base pour la création d'enumération. On peu définir ces enumérations de différentes façon.
 
-.. code-block:: Enum_01
+.. code-block:: python3
 
 	>>> class StateLight(Enum):
 			RED = 1
@@ -104,7 +104,7 @@ Enum, est la classe de base pour la création d'enumération. On peu définir ce
 
 est égal à :
 
-.. code-block:: Enum_02
+.. code-block:: python3
 
 	>>> StateLight = Enum('Light', 'RED ORANGE GREEN')
 	>>> List(StageLight)
@@ -112,13 +112,13 @@ est égal à :
 
 ou 
 
-.. code-block:: Enum_03
+.. code-block:: python3
 
 	>>> StateLight = Enum('RED=1,ORANGE=2, GREEN=3')
 
 ou encore comme vue dans l'exemple 2.2. on peu remplacé les valeurs numériques par des valeurs plus parlante.
 
-.. code-block:: Enum_04
+.. code-block:: python3
 
 	>>> StateLight = Enum('RED='Rouge',ORANGE='Orange', GREEN='Vert')
 	>>> StageLight.GREEN
