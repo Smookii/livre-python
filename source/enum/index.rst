@@ -142,9 +142,6 @@ Unique va renvoyer une erreur si deux éléments d'une enumération ont la même
 		TWO = 2
 		THREE = 2
 
-	Traceback (most recent call last):
-	File "<pyshell#64>", line 2, in <module>
-	class Mistake(Enum):
 
 
 3.3. Enum
