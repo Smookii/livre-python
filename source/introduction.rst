@@ -21,7 +21,6 @@ Bases
 * :ref:`collections-tutorial`
 * :ref:`hashlib-tutorial`
 * :ref:`fstrings-tutorial`
-* :ref:`io-tutorial`
 * :ref:`itertools-tutorial` ★
 * :ref:`random-tutorial` ★
 * :ref:`math-tutorial`

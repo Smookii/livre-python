@@ -116,17 +116,17 @@ La fonction utilisé par auto() est _generate_next_value_(), qui peut être re-�
 
 .. code-block:: pycon
 
-  >>> class AutoName(Enum):
+	>>> class AutoName(Enum):
     def _generate_next_value_(name, start, count, last_values):
         return name
 
-  >>> class CarBrand(AutoName):
+	>>> class CarBrand(AutoName):
     AUDI = auto()
     TOYOTA = auto()
     OPEL = auto()
     BMW = auto()
 
-  >>> list(CarBrand)
+	>>> list(CarBrand)
     [<CarBrand.AUDI: 'AUDI'>, <CarBrand.TOYOTA: 'TOYOTA'>, <CarBrand.OPEL: 'OPEL'>, <CarBrand.BMW: 'BMW'>]
 
 3.2. Unique()
@@ -135,16 +135,16 @@ Unique va renvoyer une erreur si deux éléments d'une enumération ont la même
 
 .. code-block:: pycon
 
-  >>> from enum import Enum, unique
-  >>> @unique
-  class Mistake(Enum):
-       ONE = 1
-       TWO = 2
-       THREE = 2
+	>>> from enum import Enum, unique
+	>>> @unique
+	class Mistake(Enum):
+		ONE = 1
+		TWO = 2
+		THREE = 2
 
-  Traceback (most recent call last):
-  File "<pyshell#64>", line 2, in <module>
-  class Mistake(Enum):
+	Traceback (most recent call last):
+	File "<pyshell#64>", line 2, in <module>
+	class Mistake(Enum):
 
 
 3.3. Enum
@@ -174,21 +174,22 @@ deux enumération de type IntEnum.
 
 
 .. code-block:: pycon
-  >>> from enum import IntEnum
-  >>> class Color(IntEnum):
-     RED = 1
-     GREEN = 2
 
-  >>> class Request(IntEnum):
-      POST = 1
-      GET = 2
+	>>> from enum import IntEnum
+	>>> class Color(IntEnum):
+		RED = 1
+		GREEN = 2
 
-  >>> Color == 1
-  False
-  >>> Color.RED == 1
-  True
-  >>> Color.RED == Request.POST
-  True
+	>>> class Request(IntEnum):
+		POST = 1
+		GET = 2
+
+	>>> Color == 1
+		False
+	>>> Color.RED == 1
+		True
+	>>> Color.RED == Request.POST
+		True
 
 
 Attention les intEnum ne peuvent pas être comparé à des Enum normales même si le valeurs de l'Enum sont numériques.
@@ -198,34 +199,37 @@ Attention les intEnum ne peuvent pas être comparé à des Enum normales même s
 IntFlag est également basé sur int, mais il permet d'utiliser des opérations sur les bits comme le et logique.
 
 .. code-block:: pycon
-  >>> from enum import IntFlag
-  >>> class Perm(IntFlag):
-     X = 1
-     W = 2
-     R = 4
 
-  >>> Perm.W | 2
-     <Perm.W: 2>
+	>>> from enum import IntFlag
+	>>> class Perm(IntFlag):
+		X = 1
+		W = 2
+		R = 4
+
+	>>> Perm.W | 2
+		<Perm.W: 2>
 
 Vous pouvez également utiliser ces opérations entre deux IntFlag différent, cela retournera toujours un IntFlag.
 
 .. code-block:: pycon
-  >>> from enum import IntFlag
 
-  >>> Perm.W | Perm.R
-     <Perm.R|W: 6>
+	>>> from enum import IntFlag
 
-  >>> Perm.W & Perm.X
-     <Perm.0: 0>
+	>>> Perm.W | Perm.R
+		<Perm.R|W: 6>
+
+	>>> Perm.W & Perm.X
+		<Perm.0: 0>
 
 A partir de la vous pouvez convertir le retour dans d'autres type.
 .. code-block:: pycon
-  >>> from enum import IntFlag
-  >>> bool(Perm.W & Perm.X)
-  False
 
-  >>> int(Perm.W | Perm.R)
-     6
+	>>> from enum import IntFlag
+	>>> bool(Perm.W & Perm.X)
+		False
+
+	>>> int(Perm.W | Perm.R)
+		6
 
 
 3.6. Flag
@@ -235,8 +239,9 @@ Bien que les valeurs puissent être donné manuellement il est conseillé d'util
 automatiquement des valeurs.
 
 .. code-block:: pycon
-  >>> from enum import Flag
-  >>> class Color(Flag):
+
+	>>> from enum import Flag
+	>>> class Color(Flag):
        RED = auto()
        BLUE = auto()
        GREEN = auto()
@@ -249,6 +254,8 @@ automatiquement des valeurs.
       <Color.GREEN: 4>
 
 Il est également possible donner des valeurs qui sont des retour d'opération d'autres Flag.
+
+.. code-block:: pycon
 
    >>> class Color(Flag):
        RED = auto()
