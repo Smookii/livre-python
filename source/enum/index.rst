@@ -142,6 +142,7 @@ Unique va renvoyer une erreur si deux éléments d'une enumération ont la même
 		TWO = 2
 		THREE = 2
 
+Retournera une erreur !
 
 
 3.3. Enum
